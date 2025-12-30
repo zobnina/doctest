@@ -1,0 +1,98 @@
+openapi: 3.1.0
+
+info:
+  title: test
+  description: тестовая апи
+  version: 1.0.0
+
+servers:
+  - url: http://test-api.ru
+    description: Какое-то описание
+
+paths:
+  /test/{path1}:
+    get:
+      description: Метод получения чего-то
+      operationId: test_get
+      parameters:
+        - in: header
+          name: header1
+          description: Параметр в заголовке
+          required: true
+          schema:
+            type: integer
+        - in: query
+          name: query1
+          description: Параметр
+          required: false
+          schema:
+            type: boolean
+        - in: path
+          name: path1
+          description: Параметр в пути
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        "400":
+          description: Ошибка валидации данных в запросе
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /test:
+    post:
+      description: Метод создания чего-то
+      operationId: test_post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestMessage'
+      responses:
+        "200":
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        "400":
+          description: Ошибка валидации данных в запросе
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    RequestMessage:
+      type: object
+      description: Запрос
+      properties:
+        field:
+          type: string
+          format: uuid
+          description: Какое-то поле
+      required:
+        - field
+    SuccessResponse:
+      type: object
+      description: Успешный ответ
+      properties:
+        message:
+          type: string
+          description: Сообщение
+    ErrorResponse:
+      type: object
+      description: Неуспешный ответ
+      properties:
+        exception:
+          type: string
+          description: Исключение

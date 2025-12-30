@@ -9,8 +9,10 @@ title: Статья созданная в редакторе грамакс
 
 [html]
 
-<iframe src="index.html" width="100%" height="500px"></iframe>
+<p>HTML</p>
 
 [/html]
 
 [openapi:./openapi.yaml:true]
+
+[openapi:https://github.com/ib1te1/bank-system/blob/main/deal/src/main/resources/openapi/openapi-deal.yaml:true]

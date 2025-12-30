@@ -5,7 +5,7 @@ title: Статья созданная в редакторе грамакс
 
 Текст статьи
 
-[plant-uml:./statya-sozdannaya-v-redaktore-gramax.puml::110px:120px]
+[plant-uml:./schemas.plantuml::110px:120px]
 
 [html]
 
@@ -13,4 +13,4 @@ title: Статья созданная в редакторе грамакс
 
 [/html]
 
-[openapi:./statya-sozdannaya-v-redaktore-gramax.yaml:true]
+[openapi:./openapi.yaml:true]

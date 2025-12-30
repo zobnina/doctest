@@ -1,0 +1,19 @@
+@startuml
+
+title test Schemas Diagram
+
+entity ErrorResponse {
+    exception: String
+}
+
+entity RequestMessage {
+    * field: UUID
+}
+
+entity SuccessResponse {
+    message: String
+}
+
+
+
+@enduml

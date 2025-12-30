@@ -13,6 +13,4 @@ title: Статья созданная в редакторе грамакс
 
 [/html]
 
-
-
-[/html]
+[openapi:./openapi.yaml:true]

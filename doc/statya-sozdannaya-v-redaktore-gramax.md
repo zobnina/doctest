@@ -7,6 +7,10 @@ title: Статья созданная в редакторе грамакс
 
 [plant-uml:./schemas.plantuml::110px:120px]
 
-[html:./index.html]
+[html]
+
+<p>HTML</p>
+
+[/html]
 
 [openapi:./openapi.yaml:true]

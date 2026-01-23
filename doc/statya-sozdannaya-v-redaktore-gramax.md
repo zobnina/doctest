@@ -10,3 +10,11 @@ title: Статья созданная в редакторе грамакс
 [plant-uml:./schemas.plantuml::110px:120px]
 
 [openapi:./openapi.yaml:true]
+
+```
+FROM 
+```
+
+* [ ] bkdfsd
+
+* [x] sdfsdfds

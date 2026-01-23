@@ -11,7 +11,7 @@ title: Статья созданная в редакторе грамакс
 
 [openapi:./openapi.yaml:true]
 
-[md:./from-git-page.md]
+[md](./from-git-page.md)
 ```
 FROM 
 ```
